@@ -1,0 +1,26 @@
+{
+  // See https://aka.ms/bicep/config for more information on Bicep configuration options
+  // Press CTRL+SPACE/CMD+SPACE at any location to see Intellisense suggestions
+  "analyzers": {
+    "core": {
+      "rules": {
+        "no-unused-params": {
+          "level": "warning"
+        },
+        "no-hardcoded-env-urls": {
+          "level": "warning",
+          "excludedhosts": [
+            "privatelink.queue.core.windows.net",
+            "privatelink.redis.cache.windows.net",
+            "privatelink.cognitiveservices.azure.com",
+            "privatelink.openai.azure.com",
+            "privatelink.search.windows.net",
+            "privatelink.azurewebsites.net",
+            "privatelink.vault.azure.net",
+            "core.windows.net"
+          ]
+        }
+      }
+    }
+  }
+}
